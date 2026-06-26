@@ -813,15 +813,16 @@ html, body {
 <a class="toc-item sub" data-idx="25">模型 · 实操古风角色图</a>
 <a class="toc-item sub" data-idx="26">提示词 · 7 步差异</a>
 <a class="toc-item sub" data-idx="27">提示词 · 实操小红书</a>
-<a class="toc-item sub" data-idx="28">Agent · 核心差异</a>
-<a class="toc-item sub" data-idx="29">Agent · 难点深入</a>
-<a class="toc-item sub" data-idx="30">RAG · 核心指标</a>
-<a class="toc-item sub" data-idx="31">RAG · 难点深入</a>
-<a class="toc-item sub" data-idx="32">4 对象横向对比</a>
-<a class="toc-item ch" data-idx="33">CH05 · 收尾</a>
-<a class="toc-item sub" data-idx="34">评测闭环</a>
-<a class="toc-item sub" data-idx="35">五大面试话术</a>
-<a class="toc-item sub" data-idx="36">维度贴合指标</a>
+<a class="toc-item sub" data-idx="28">Agent · 核心差异 + 三件套</a>
+<a class="toc-item sub" data-idx="29">Agent · 三层 + 失败模式</a>
+<a class="toc-item sub" data-idx="30">Agent · 体系 + 读报告</a>
+<a class="toc-item sub" data-idx="31">RAG · 核心指标</a>
+<a class="toc-item sub" data-idx="32">RAG · 难点深入</a>
+<a class="toc-item sub" data-idx="33">4 对象横向对比</a>
+<a class="toc-item ch" data-idx="34">CH05 · 收尾</a>
+<a class="toc-item sub" data-idx="35">评测闭环</a>
+<a class="toc-item sub" data-idx="36">五大面试话术</a>
+<a class="toc-item sub" data-idx="37">维度贴合指标</a>
   </nav>
 </aside>
 
@@ -1573,43 +1574,93 @@ html, body {
   </div>
 </section>
 
-<!-- S30 Agent · 难点深入 · trace + 评测集 + Rubric 范例 -->
+<!-- S30 Agent · 三层评测 + 4 类失败模式 -->
 <section class="slide">
-  <div class="slide-header"><span>Agent 评测</span><span>难点深入 · trace + Rubric</span></div>
-  <div class="eyebrow">Agent Eval · Deep Dive</div>
-  <h2 class="display h-m">Agent 评测 · 两层 + 两测 + 一 Rubric</h2>
+  <div class="slide-header"><span>Agent 评测</span><span>三层评测 + 失败模式</span></div>
+  <div class="eyebrow">Agent Eval · 3 Layers + 4 Failure Modes</div>
+  <h2 class="display h-m">Agent 评测 · <span class="hl">分层拆开</span>评</h2>
   <div class="two-col mt-l">
     <div class="card">
-      <div class="card-label">指标两层 · 业务 + 评测</div>
-      <table style="width:100%;font-size:19px;line-height:1.5;border-collapse:collapse">
-        <thead><tr style="border-bottom:1.5px solid var(--text)"><th style="text-align:left;padding:10px 8px 10px 0;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text-meta);letter-spacing:2px">层</th><th style="text-align:left;padding:10px 0;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text-meta);letter-spacing:2px">举例</th></tr></thead>
+      <div class="card-label">三层评测 · 评什么 / 看什么</div>
+      <table style="width:100%;font-size:18px;line-height:1.5;border-collapse:collapse">
+        <thead><tr style="border-bottom:1.5px solid var(--text)"><th style="text-align:left;padding:10px 8px 10px 0;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text-meta);letter-spacing:2px;width:110px">层</th><th style="text-align:left;padding:10px 0;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text-meta);letter-spacing:2px">关键指标</th></tr></thead>
         <tbody>
-          <tr style="border-bottom:1px solid var(--border)"><td style="padding:14px 8px 14px 0;color:var(--text);font-weight:700">业务指标</td><td style="padding:14px 0;color:var(--text-secondary)">报告撰写效率 ≤ 2 人日<br>内容采纳率 ≥ 52%</td></tr>
-          <tr><td style="padding:14px 8px 14px 0;color:var(--text);font-weight:700">评测指标</td><td style="padding:14px 0;color:var(--text-secondary)">事实性准确率 ≥ 82%（定量）<br>关键信息召回率 ≥ 95%（定量）<br>报告结构合理性 ≥ 4.0（定性）</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:14px 8px 14px 0;color:var(--text);font-weight:700">Trace 级<br><span style="font-size:14px;font-weight:400;color:var(--text-meta)">每一步骤</span></td><td style="padding:14px 0;color:var(--text-secondary)">· 意图识别正确率<br>· 工具调用正确率<br>· 检索召回率<br>· 中间产出可用率</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:14px 8px 14px 0;color:var(--text);font-weight:700">端到端<br><span style="font-size:14px;font-weight:400;color:var(--text-meta)">最终产出</span></td><td style="padding:14px 0;color:var(--text-secondary)">· 任务完成率<br>· 路径合理性<br>· 整体质量分</td></tr>
+          <tr><td style="padding:14px 8px 14px 0;color:var(--text);font-weight:700">用户体验<br><span style="font-size:14px;font-weight:400;color:var(--text-meta)">实际感受</span></td><td style="padding:14px 0;color:var(--text-secondary)">· 采纳率<br>· 复用率<br>· 满意度</td></tr>
         </tbody>
       </table>
     </div>
     <div class="card">
-      <div class="card-label">两测 · trace + 端到端</div>
-      <table style="width:100%;font-size:19px;line-height:1.5;border-collapse:collapse">
-        <thead><tr style="border-bottom:1.5px solid var(--text)"><th style="text-align:left;padding:10px 8px 10px 0;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text-meta);letter-spacing:2px">测什么</th><th style="text-align:left;padding:10px 0;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text-meta);letter-spacing:2px">怎么测</th></tr></thead>
+      <div class="card-label">4 类失败模式 · Bad case 怎么分类</div>
+      <table style="width:100%;font-size:18px;line-height:1.5;border-collapse:collapse">
+        <thead><tr style="border-bottom:1.5px solid var(--text)"><th style="text-align:left;padding:10px 8px 10px 0;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text-meta);letter-spacing:2px;width:150px">类型</th><th style="text-align:left;padding:10px 0;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text-meta);letter-spacing:2px">典型表现 · 例子</th></tr></thead>
         <tbody>
-          <tr style="border-bottom:1px solid var(--border)"><td style="padding:14px 8px 14px 0;color:var(--text);font-weight:700">trace 级</td><td style="padding:14px 0;color:var(--text-secondary)">每一步骤单独打分：<br>意图识别正确率 · 工具调用正确率 · 检索召回率</td></tr>
-          <tr><td style="padding:14px 8px 14px 0;color:var(--text);font-weight:700">端到端</td><td style="padding:14px 0;color:var(--text-secondary)">最终产出物质量：<br>报告好不好 · 任务有没完成 · 用户用不用</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 8px 12px 0;color:var(--text);font-weight:700">① 路径错</td><td style="padding:12px 0;color:var(--text-secondary)">选错工具 / 错流程<br><span style="color:var(--text-meta);font-size:14px">该用搜索却用了计算器</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 8px 12px 0;color:var(--text);font-weight:700">② 输入解析错</td><td style="padding:12px 0;color:var(--text-secondary)">用户意图理解错<br><span style="color:var(--text-meta);font-size:14px">问"价格"理解为"成本"</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 8px 12px 0;color:var(--text);font-weight:700">③ 中间执行错</td><td style="padding:12px 0;color:var(--text-secondary)">某步工具调用失败<br><span style="color:var(--text-meta);font-size:14px">检索 API 超时整链断</span></td></tr>
+          <tr><td style="padding:12px 8px 12px 0;color:var(--text);font-weight:700">④ 输出整合错</td><td style="padding:12px 0;color:var(--text-secondary)">中间对、最后错<br><span style="color:var(--text-meta);font-size:14px">章节顺序错 / 数据漏汇总</span></td></tr>
         </tbody>
       </table>
     </div>
   </div>
-  <p class="body-s mt-l" style="max-width:1380px;color:var(--text);font-weight:600;margin-bottom:12px">Rubric 范例 · 「报告结构合理性」1-5 分</p>
-  <div class="rubric-box">
-    <div class="r-row"><div class="r-score">5 分</div><div class="r-desc"><em>结构能根据项目特性智能调整</em>（光伏制氢项目自动增加光资源评估章节）</div></div>
-    <div class="r-row"><div class="r-score mid">4 分</div><div class="r-desc">完整覆盖核心模块，只需少量微调（13 章完整 + 与 PRD 高度一致）</div></div>
-    <div class="r-row"><div class="r-score mid">3 分</div><div class="r-desc">基本完整，需明显补充（财务测算缺投资估算表）</div></div>
-    <div class="r-row"><div class="r-score low">1-2 分</div><div class="r-desc"><span class="bad">缺关键章节 / 结构混乱不可用</span></div></div>
+  <p class="body-s mt-l" style="max-width:1380px;color:var(--text);font-weight:600">
+    Agent 归因比模型评测<strong>多一层</strong>——不光问 <span style="color:var(--warn)">"哪一类错"</span>，还要问 <span style="color:var(--accent)">"在哪一步错"</span>。
+  </p>
+</section>
+
+<!-- S31 Agent · 评测体系 + PM 读报告 -->
+<section class="slide">
+  <div class="slide-header"><span>Agent 评测</span><span>评测体系 + PM 读报告</span></div>
+  <div class="eyebrow">Agent Eval · Build + Read</div>
+  <h2 class="display h-s">Agent 评测 · PM 怎么<span class="hl">建</span>、怎么<span class="hl">读</span></h2>
+  <div class="two-col mt-m">
+    <div class="card" style="padding:24px 28px">
+      <div class="card-label">建 · 指标两层</div>
+      <table style="width:100%;font-size:17px;line-height:1.5;border-collapse:collapse">
+        <thead><tr style="border-bottom:1.5px solid var(--text)"><th style="text-align:left;padding:8px 8px 8px 0;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-meta);letter-spacing:2px;width:90px">层</th><th style="text-align:left;padding:8px 0;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-meta);letter-spacing:2px">举例</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:10px 8px 10px 0;color:var(--text);font-weight:700">业务指标</td><td style="padding:10px 0;color:var(--text-secondary)">报告撰写效率 ≤ 2 人日<br>内容采纳率 ≥ 52%</td></tr>
+          <tr><td style="padding:10px 8px 10px 0;color:var(--text);font-weight:700">评测指标</td><td style="padding:10px 0;color:var(--text-secondary)">事实性准确率 ≥ 82%<br>关键信息召回率 ≥ 95%<br>报告结构合理性 ≥ 4.0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card" style="padding:24px 28px">
+      <div class="card-label">建 · Agent 评测集 4 特殊要求</div>
+      <table style="width:100%;font-size:17px;line-height:1.55;border-collapse:collapse">
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:10px 8px 10px 0;width:40px;color:var(--text);font-weight:700">①</td><td style="padding:10px 0;color:var(--text-secondary)"><strong style="color:var(--text)">预期路径</strong>（标注步骤序列）</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:10px 8px 10px 0;color:var(--text);font-weight:700">②</td><td style="padding:10px 0;color:var(--text-secondary)"><strong style="color:var(--text)">预期工具调用</strong>（哪些 API / Tool）</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:10px 8px 10px 0;color:var(--text);font-weight:700">③</td><td style="padding:10px 0;color:var(--text-secondary)"><strong style="color:var(--text)">预期中间产出</strong>（每步该输出什么）</td></tr>
+          <tr><td style="padding:10px 8px 10px 0;color:var(--text);font-weight:700">④</td><td style="padding:10px 0;color:var(--text-secondary)"><strong style="color:var(--text)">等价正确标注</strong>（多解法时哪些都算对）</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="mt-l" style="display:grid;grid-template-columns:1.3fr 1fr;gap:20px;width:100%;max-width:1380px;align-items:start">
+    <div>
+      <p class="body-s" style="font-size:17px;color:var(--text);font-weight:600;margin-bottom:10px">Rubric 范例 · 「报告结构合理性」1-5 分</p>
+      <div class="rubric-box" style="padding:24px 32px">
+        <div class="r-row" style="padding:8px 0"><div class="r-score">5 分</div><div class="r-desc" style="font-size:17px"><em>结构能根据项目特性智能调整</em>（光伏制氢项目自动加光资源评估章节）</div></div>
+        <div class="r-row" style="padding:8px 0"><div class="r-score mid">4 分</div><div class="r-desc" style="font-size:17px">完整覆盖核心模块，少量微调（13 章完整 + 与 PRD 高度一致）</div></div>
+        <div class="r-row" style="padding:8px 0"><div class="r-score mid">3 分</div><div class="r-desc" style="font-size:17px">基本完整，需明显补充（财务测算缺投资估算表）</div></div>
+        <div class="r-row" style="padding:8px 0"><div class="r-score low">1-2 分</div><div class="r-desc" style="font-size:17px"><span class="bad">缺关键章节 / 结构混乱不可用</span></div></div>
+      </div>
+    </div>
+    <div class="card" style="padding:24px 28px">
+      <div class="card-label">读 · PM 读报告 3 动作</div>
+      <table style="width:100%;font-size:17px;line-height:1.5;border-collapse:collapse">
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:14px 8px 14px 0;width:40px;color:var(--text);font-weight:700">①</td><td style="padding:14px 0;color:var(--text-secondary)"><strong style="color:var(--text)">看整体分</strong><br>整体是否达标 → 上不上线</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:14px 8px 14px 0;color:var(--text);font-weight:700">②</td><td style="padding:14px 0;color:var(--text-secondary)"><strong style="color:var(--text)">看 trace 分布</strong><br>找<span style="color:var(--warn)">断点</span> = 哪一步最低分</td></tr>
+          <tr><td style="padding:14px 8px 14px 0;color:var(--text);font-weight:700">③</td><td style="padding:14px 0;color:var(--text-secondary)"><strong style="color:var(--text)">看路径分布</strong><br>看<span style="color:var(--warn)">冗余</span> = 走了不必要的步骤</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
-<!-- S31 RAG · 2 核心指标 + PM 关注 -->
+<!-- S32 RAG · 2 核心指标 + PM 关注 -->
 <section class="slide">
   <div class="slide-header"><span>RAG 评测</span><span>2 个核心指标 + PM 关注</span></div>
   <div class="eyebrow">RAG Eval · 2 Core Metrics</div>
@@ -1638,7 +1689,7 @@ html, body {
   </table>
 </section>
 
-<!-- S32 RAG · 难点深入 · 公式 + 常见坑 -->
+<!-- S33 RAG · 难点深入 · 公式 + 常见坑 -->
 <section class="slide">
   <div class="slide-header"><span>RAG 评测</span><span>难点深入 · 公式 + 常见坑</span></div>
   <div class="eyebrow">RAG Eval · Deep Dive</div>
@@ -1685,7 +1736,7 @@ html, body {
   </div>
 </section>
 
-<!-- S33 4 对象横向对比 -->
+<!-- S34 4 对象横向对比 -->
 <section class="slide">
   <div class="slide-header"><span>横向对比</span><span>4 对象 · 一张表</span></div>
   <div class="eyebrow">Side-by-Side · 4 Objects</div>
@@ -1714,7 +1765,7 @@ html, body {
   </p>
 </section>
 
-<!-- S34 CH05 章节封面 -->
+<!-- S35 CH05 章节封面 -->
 <section class="slide">
   <div class="slide-header"><span>Chapter 05</span><span>收尾</span></div>
   <div class="chapter-watermark">05</div>
@@ -1725,7 +1776,7 @@ html, body {
   </div>
 </section>
 
-<!-- S35 评测闭环 -->
+<!-- S36 评测闭环 -->
 <section class="slide">
   <div class="slide-header"><span>CH05 · 收尾</span><span>评测闭环</span></div>
   <div class="eyebrow">The Loop</div>
@@ -1740,7 +1791,7 @@ html, body {
   </div>
 </section>
 
-<!-- S36 五大面试话术 -->
+<!-- S37 五大面试话术 -->
 <section class="slide">
   <div class="slide-header"><span>CH05 · 收尾</span><span>五大面试话术</span></div>
   <div class="eyebrow">Interview Quick Ref</div>
@@ -1755,7 +1806,7 @@ html, body {
   <div class="side-anchor"><div class="anchor-num">5</div></div>
 </section>
 
-<!-- S37 母观点收尾 -->
+<!-- S38 母观点收尾 -->
 <section class="slide">
   <div class="slide-header"><span>End of Session</span><span>See You Next Time</span></div>
   <div class="eyebrow">Takeaway</div>
