@@ -443,26 +443,26 @@ html, body {
 
 .step-flow {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
   width: 100%;
   max-width: 1380px;
 }
 .flow-step {
   border: 1.5px solid var(--border);
-  border-radius: 16px;
-  padding: 24px 18px;
+  border-radius: 14px;
+  padding: 22px 14px;
   position: relative;
 }
 .flow-step .fs-num {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 12px; font-weight: 700;
+  font-size: 11px; font-weight: 700;
   letter-spacing: 2px;
   color: var(--text-meta);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
-.flow-step .fs-title { font-size: 26px; font-weight: 700; color: var(--text); margin-bottom: 10px; letter-spacing: -0.01em; }
-.flow-step .fs-sub { font-size: 15px; color: var(--text-secondary); line-height: 1.5; }
+.flow-step .fs-title { font-size: 24px; font-weight: 700; color: var(--text); margin-bottom: 8px; letter-spacing: -0.01em; }
+.flow-step .fs-sub { font-size: 14px; color: var(--text-secondary); line-height: 1.45; }
 .flow-step.cur { border-color: var(--text); background: #fafafa; }
 
 .rubric-box {
@@ -800,27 +800,28 @@ html, body {
 <a class="toc-item sub" data-idx="12">传统 PM → AI PM</a>
 <a class="toc-item ch" data-idx="13">CH03 · 评测的全景</a>
 <a class="toc-item sub" data-idx="14">四层架构 + 平台星标</a>
-<a class="toc-item sub" data-idx="15">6 步流程总览</a>
+<a class="toc-item sub" data-idx="15">7 步流程总览</a>
 <a class="toc-item ch" data-idx="16">CH04 · 怎么做评测</a>
 <a class="toc-item sub" data-idx="17">模型 · S1 定目标</a>
 <a class="toc-item sub" data-idx="18">模型 · S2 拆指标</a>
 <a class="toc-item sub" data-idx="19">模型 · S3 拆维度</a>
-<a class="toc-item sub" data-idx="20">模型 · S4-A 评测方法 谁来评</a>
-<a class="toc-item sub" data-idx="21">模型 · S4-B 打分方法 怎么打</a>
-<a class="toc-item sub" data-idx="22">模型 · S5 跑测试</a>
-<a class="toc-item sub" data-idx="23">模型 · S6 统计分数</a>
-<a class="toc-item sub" data-idx="24">模型 · 实操古风角色图</a>
-<a class="toc-item sub" data-idx="25">提示词 · 6 步差异</a>
-<a class="toc-item sub" data-idx="26">提示词 · 实操小红书</a>
-<a class="toc-item sub" data-idx="27">Agent · 核心差异</a>
-<a class="toc-item sub" data-idx="28">Agent · 难点深入</a>
-<a class="toc-item sub" data-idx="29">RAG · 核心指标</a>
-<a class="toc-item sub" data-idx="30">RAG · 难点深入</a>
-<a class="toc-item sub" data-idx="31">4 对象横向对比</a>
-<a class="toc-item ch" data-idx="32">CH05 · 收尾</a>
-<a class="toc-item sub" data-idx="33">评测闭环</a>
-<a class="toc-item sub" data-idx="34">五大面试话术</a>
-<a class="toc-item sub" data-idx="35">维度贴合指标</a>
+<a class="toc-item sub" data-idx="20">模型 · S4 造评测集</a>
+<a class="toc-item sub" data-idx="21">模型 · S5-A 评测方法</a>
+<a class="toc-item sub" data-idx="22">模型 · S5-B 打分方法</a>
+<a class="toc-item sub" data-idx="23">模型 · S6 跑测试</a>
+<a class="toc-item sub" data-idx="24">模型 · S7 统计分数</a>
+<a class="toc-item sub" data-idx="25">模型 · 实操古风角色图</a>
+<a class="toc-item sub" data-idx="26">提示词 · 7 步差异</a>
+<a class="toc-item sub" data-idx="27">提示词 · 实操小红书</a>
+<a class="toc-item sub" data-idx="28">Agent · 核心差异</a>
+<a class="toc-item sub" data-idx="29">Agent · 难点深入</a>
+<a class="toc-item sub" data-idx="30">RAG · 核心指标</a>
+<a class="toc-item sub" data-idx="31">RAG · 难点深入</a>
+<a class="toc-item sub" data-idx="32">4 对象横向对比</a>
+<a class="toc-item ch" data-idx="33">CH05 · 收尾</a>
+<a class="toc-item sub" data-idx="34">评测闭环</a>
+<a class="toc-item sub" data-idx="35">五大面试话术</a>
+<a class="toc-item sub" data-idx="36">维度贴合指标</a>
   </nav>
 </aside>
 
@@ -1100,32 +1101,34 @@ html, body {
   </p>
 </section>
 
-<!-- S16 6 步流程总览 -->
+<!-- S16 7 步流程总览 -->
 <section class="slide">
-  <div class="slide-header"><span>CH03 · 全景</span><span>6 步流程总览</span></div>
-  <div class="eyebrow">The 6 Steps · 评测全流程</div>
-  <h2 class="display h-m">AI 产品评测的 <span class="hl">6 步流程</span></h2>
+  <div class="slide-header"><span>CH03 · 全景</span><span>7 步流程总览</span></div>
+  <div class="eyebrow">The 7 Steps · 评测全流程</div>
+  <h2 class="display h-m">AI 产品评测的 <span class="hl">7 步流程</span></h2>
   <div class="step-flow mt-l">
     <div class="flow-step"><div class="fs-num">Step 01</div><div class="fs-title">定目标</div><div class="fs-sub">解决什么决策</div></div>
     <div class="flow-step"><div class="fs-num">Step 02</div><div class="fs-title">拆指标</div><div class="fs-sub">业务关心的数字</div></div>
     <div class="flow-step"><div class="fs-num">Step 03</div><div class="fs-title">拆维度</div><div class="fs-sub">指标的测试点</div></div>
-    <div class="flow-step"><div class="fs-num">Step 04</div><div class="fs-title">定评分</div><div class="fs-sub">怎么打分</div></div>
-    <div class="flow-step"><div class="fs-num">Step 05</div><div class="fs-title">跑测试</div><div class="fs-sub">真实场景验证</div></div>
-    <div class="flow-step"><div class="fs-num">Step 06</div><div class="fs-title">统计分数</div><div class="fs-sub">出可拍板结论</div></div>
+    <div class="flow-step"><div class="fs-num">Step 04</div><div class="fs-title">造评测集</div><div class="fs-sub">出什么卷子</div></div>
+    <div class="flow-step"><div class="fs-num">Step 05</div><div class="fs-title">定评分</div><div class="fs-sub">怎么打分</div></div>
+    <div class="flow-step"><div class="fs-num">Step 06</div><div class="fs-title">跑测试</div><div class="fs-sub">真实场景验证</div></div>
+    <div class="flow-step"><div class="fs-num">Step 07</div><div class="fs-title">统计分数</div><div class="fs-sub">出可拍板结论</div></div>
   </div>
   <table class="tbl dense mt-l">
-    <thead><tr><th style="width:100px">Step</th><th style="width:45%">要回答的问题</th><th>产出物</th></tr></thead>
+    <thead><tr><th style="width:120px">Step</th><th style="width:42%">要回答的问题</th><th>产出物</th></tr></thead>
     <tbody>
       <tr><td><strong>01 定目标</strong></td><td>这次评测是为了<strong>什么决策</strong>？</td><td class="sec">决策语句（选型/上线/迭代/监控）</td></tr>
       <tr><td><strong>02 拆指标</strong></td><td>这个决策业务上<strong>看什么数字</strong>？</td><td class="sec">1–3 个业务指标（北极星）</td></tr>
       <tr><td><strong>03 拆维度</strong></td><td>业务指标拆成<strong>哪些可测点</strong>？</td><td class="sec">定性 + 定量维度清单</td></tr>
-      <tr><td><strong>04 定评分</strong></td><td>每个维度<strong>怎么变成分数</strong>？</td><td class="sec">评测方法（谁来评）+ 打分方法（怎么打）+ Rubric</td></tr>
-      <tr><td><strong>05 跑测试</strong></td><td>用什么数据测？怎么测？</td><td class="sec">评测集 + 执行报告</td></tr>
-      <tr><td><strong>06 统计分数</strong></td><td>分数<strong>老板能不能拍板</strong>？</td><td class="sec">归因分布 + 决策建议</td></tr>
+      <tr><td><strong>04 造评测集</strong></td><td>拿<strong>什么数据</strong>来测？</td><td class="sec">真实日志 40 + 历史 bad case 20 + 边界 20 + AI 生成 20</td></tr>
+      <tr><td><strong>05 定评分</strong></td><td>每个维度<strong>怎么变成分数</strong>？</td><td class="sec">评测方法（谁来评）+ 打分方法（怎么打）+ Rubric</td></tr>
+      <tr><td><strong>06 跑测试</strong></td><td>怎么跑？关注什么？</td><td class="sec">执行报告 + Bad case 收集</td></tr>
+      <tr><td><strong>07 统计分数</strong></td><td>分数<strong>老板能不能拍板</strong>？</td><td class="sec">归因分布 + 决策建议</td></tr>
     </tbody>
   </table>
   <p class="body-s mt-m" style="max-width:1380px;color:var(--text);font-weight:600">
-    这 6 步对 <strong>模型 / 提示词 / Agent / RAG</strong> 都适用——方法一样，对象不同。
+    这 7 步对 <strong>模型 / 提示词 / Agent / RAG</strong> 都适用——方法一样，对象不同。
   </p>
 </section>
 
@@ -1231,10 +1234,45 @@ html, body {
   </div>
 </section>
 
-<!-- S21 模型评测 Step 4-A 评测方法 · 谁来评 -->
+<!-- S21 模型评测 Step 04 造评测集 -->
 <section class="slide">
-  <div class="slide-header"><span>模型评测 · Step 04-A</span><span>评测方法 · 谁来评</span></div>
-  <div class="eyebrow">Model Eval · Step 04 · Who Scores</div>
+  <div class="slide-header"><span>模型评测 · Step 04</span><span>造评测集 · 出什么卷子</span></div>
+  <div class="eyebrow">Model Eval · Step 04 · Build Dataset</div>
+  <h2 class="display h-m">造评测集 · <span class="hl">4 个来源</span></h2>
+  <div class="mt-l" style="display:grid;grid-template-columns:1.1fr 1fr;gap:24px;width:100%;max-width:1380px;align-items:start">
+    <div>
+      <table class="tbl">
+        <thead><tr><th style="width:200px">来源</th><th style="width:100px">占比</th><th>采集要点</th></tr></thead>
+        <tbody>
+          <tr><td><strong>真实用户日志</strong></td><td class="sec"><strong style="color:var(--accent)">40%</strong></td><td class="sec">重点采用户改写 / 重提交的那批</td></tr>
+          <tr><td><strong>历史 Bad case</strong></td><td class="sec">20%</td><td class="sec">投诉 + 算法异常 + 差评截图</td></tr>
+          <tr><td><strong>边界 case</strong></td><td class="sec">20%</td><td class="sec">复杂长链路 + 极端脏数据</td></tr>
+          <tr><td><strong>AI 生成</strong></td><td class="sec">20%</td><td class="sec">Meta 提示词生成 + 人工筛选</td></tr>
+        </tbody>
+      </table>
+      <div class="card mt-l" style="background:var(--bg-soft);border:none">
+        <div class="card-label">关键金句</div>
+        <p style="font-size:22px;line-height:1.5;color:var(--text);font-weight:600">
+          为什么专门采 <span style="color:var(--warn)">bad case</span>，不采答得好的？<br>
+          <span style="font-weight:400;font-size:18px;color:var(--text-secondary)">→ 评测目的是<strong style="color:var(--text)">找问题</strong>。Good case 给老板看，bad case 给迭代用。</span>
+        </p>
+      </div>
+    </div>
+    <div>
+      <p class="body-s" style="font-size:18px;color:var(--text);font-weight:600;margin-bottom:12px">Bad case 收集表实例（点击放大）</p>
+      <div class="thumb thumb-h320" data-zoom="bad case案例.png" data-caption="Bad case 收集表 · 问题大类 + 子类标注">
+        <span class="thumb-tag">Bad case 实例</span>
+        <img src="bad case案例.png" alt="bad case案例">
+        <span class="thumb-zoom">↗ 放大</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S22 模型评测 Step 5-A 评测方法 · 谁来评 -->
+<section class="slide">
+  <div class="slide-header"><span>模型评测 · Step 05-A</span><span>评测方法 · 谁来评</span></div>
+  <div class="eyebrow">Model Eval · Step 05 · Who Scores</div>
   <h2 class="display h-s">3 种<span class="hl">评测方法</span> · 谁来打分（点图放大）</h2>
   <div class="three-col mt-l">
     <div class="card" style="padding:24px 26px">
@@ -1273,10 +1311,10 @@ html, body {
   </p>
 </section>
 
-<!-- S22 模型评测 Step 4-B 打分方法 · 怎么打 + Rubric -->
+<!-- S23 模型评测 Step 5-B 打分方法 · 怎么打 + Rubric -->
 <section class="slide">
-  <div class="slide-header"><span>模型评测 · Step 04-B</span><span>打分方法 + Rubric</span></div>
-  <div class="eyebrow">Model Eval · Step 04 · How to Score</div>
+  <div class="slide-header"><span>模型评测 · Step 05-B</span><span>打分方法 + Rubric</span></div>
+  <div class="eyebrow">Model Eval · Step 05 · How to Score</div>
   <h2 class="display h-m">3 种<span class="hl">打分方法</span> · 怎么打</h2>
   <table class="tbl dense mt-m">
     <thead><tr><th style="width:200px">方法</th><th style="width:35%">适用</th><th>操作</th></tr></thead>
@@ -1308,40 +1346,39 @@ html, body {
   </div>
 </section>
 
-<!-- S23 模型评测 Step 5 跑测试 -->
+<!-- S24 模型评测 Step 06 跑测试 -->
 <section class="slide">
-  <div class="slide-header"><span>模型评测 · Step 05</span><span>跑测试 · 真实场景验证</span></div>
-  <div class="eyebrow">Model Eval · Step 05</div>
-  <h2 class="display h-m">跑测试 · 评测集<span class="hl">4 个来源</span></h2>
-  <table class="tbl mt-l">
-    <thead><tr><th style="width:220px">来源</th><th style="width:100px">占比</th><th>说明</th></tr></thead>
-    <tbody>
-      <tr><td><strong>真实用户日志</strong></td><td class="sec"><strong style="color:var(--accent)">40%</strong></td><td class="sec">重点采用户改写 / 重提交的那批</td></tr>
-      <tr><td><strong>历史 Bad case</strong></td><td class="sec">20%</td><td class="sec">投诉 + 算法异常 + 差评截图</td></tr>
-      <tr><td><strong>边界 case</strong></td><td class="sec">20%</td><td class="sec">复杂长链路 + 极端脏数据</td></tr>
-      <tr><td><strong>AI 生成</strong></td><td class="sec">20%</td><td class="sec">Meta 提示词生成 + 人工筛选</td></tr>
-    </tbody>
-  </table>
-  <div class="mt-l" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;width:100%;max-width:1380px">
-    <div class="card" style="background:var(--bg-soft);border:none">
-      <div class="card-label">关键金句</div>
-      <p style="font-size:26px;line-height:1.5;color:var(--text);font-weight:600">
-        为什么专门采 <span style="color:var(--warn)">bad case</span> 而不是采答得好的 case？<br>
-        <span style="font-weight:400;font-size:20px;color:var(--text-secondary)">→ 评测的目的是<strong style="color:var(--text)">找问题</strong>。Good case 给老板看，bad case 给迭代用。</span>
-      </p>
+  <div class="slide-header"><span>模型评测 · Step 06</span><span>跑测试 · 真实场景验证</span></div>
+  <div class="eyebrow">Model Eval · Step 06 · Run</div>
+  <h2 class="display h-m">跑测试 · <span class="hl">PM 关注什么</span></h2>
+  <div class="mt-l" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;width:100%;max-width:1380px">
+    <div class="card">
+      <div class="card-label">执行三步</div>
+      <table style="width:100%;font-size:21px;line-height:1.5;border-collapse:collapse">
+        <tr style="border-bottom:1px solid var(--border)"><td style="padding:14px 8px 14px 0;width:48px;font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--text);font-size:18px">①</td><td style="padding:14px 0;color:var(--text-secondary)"><strong style="color:var(--text)">跑评测集</strong> · 按 Step 5 定的方法批量执行</td></tr>
+        <tr style="border-bottom:1px solid var(--border)"><td style="padding:14px 8px 14px 0;font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--text);font-size:18px">②</td><td style="padding:14px 0;color:var(--text-secondary)"><strong style="color:var(--text)">算分</strong> · 每条数据按 Rubric 出分</td></tr>
+        <tr><td style="padding:14px 8px 14px 0;font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--text);font-size:18px">③</td><td style="padding:14px 0;color:var(--text-secondary)"><strong style="color:var(--text)">出报告</strong> · 整体分 + 维度细分 + Bad case 清单</td></tr>
+      </table>
     </div>
-    <div class="thumb thumb-h280" data-zoom="bad case案例.png" data-caption="Bad case 收集表 · 问题大类 + 子类标注">
-      <span class="thumb-tag">Bad case 实例</span>
-      <img src="bad case案例.png" alt="bad case案例">
-      <span class="thumb-zoom">↗ 放大</span>
+    <div class="card">
+      <div class="card-label">PM 主战场</div>
+      <h3 class="display" style="font-size:32px;margin-bottom:14px">盯 <span class="hl">定性指标</span> + 收集 <span style="color:var(--warn)">Bad case</span></h3>
+      <p class="body-s" style="font-size:20px;line-height:1.55"><strong style="color:var(--text)">定量算法直接给结论</strong>——准确率、召回率、TTFT 跑完出数。<br><br>PM 的活儿在<strong style="color:var(--text)">定性维度</strong>：自己评一遍，标记低分 case，进入下一步归因。</p>
     </div>
+  </div>
+  <div class="card mt-l" style="background:var(--bg-soft);border:none;max-width:1380px;width:100%">
+    <div class="card-label">关键纪律</div>
+    <p style="font-size:26px;line-height:1.5;color:var(--text);font-weight:600">
+      跑测试出的不是<strong style="color:var(--accent)">最终分数</strong>——是<strong>下一步要归因的 Bad case 清单</strong>。<br>
+      <span style="font-weight:400;font-size:20px;color:var(--text-secondary)">→ 把每个低分 case 编号 + 截图 + 上下文，留给 Step 07 统计分数 + 归因用。</span>
+    </p>
   </div>
 </section>
 
-<!-- S24 模型评测 Step 6 统计分数 -->
+<!-- S25 模型评测 Step 07 统计分数 -->
 <section class="slide">
-  <div class="slide-header"><span>模型评测 · Step 06</span><span>统计分数 · 出可拍板结论</span></div>
-  <div class="eyebrow">Model Eval · Step 06</div>
+  <div class="slide-header"><span>模型评测 · Step 07</span><span>统计分数 · 出可拍板结论</span></div>
+  <div class="eyebrow">Model Eval · Step 07</div>
   <h2 class="display h-m">统计分数 · 出<span class="hl">可拍板结论</span></h2>
   <table class="tbl dense mt-m">
     <thead><tr><th style="width:200px">归因层级</th><th style="width:40%">典型表现</th><th>验证方法</th></tr></thead>
@@ -1366,7 +1403,7 @@ html, body {
   </p>
 </section>
 
-<!-- S25 模型评测 实操古风角色图 -->
+<!-- S26 模型评测 实操古风角色图 -->
 <section class="slide">
   <div class="slide-header"><span>模型评测 · 实操</span><span>古风角色图选型</span></div>
   <div class="eyebrow">Hands-On · 现场操作</div>
@@ -1405,22 +1442,23 @@ html, body {
   </p>
 </section>
 
-<!-- S26 提示词评测 6 步差异 -->
+<!-- S27 提示词评测 7 步差异 -->
 <section class="slide">
-  <div class="slide-header"><span>提示词评测</span><span>6 步差异表 + 实例</span></div>
-  <div class="eyebrow">Prompt Eval · 6 Step Diff</div>
+  <div class="slide-header"><span>提示词评测</span><span>7 步差异表 + 实例</span></div>
+  <div class="eyebrow">Prompt Eval · 7 Step Diff</div>
   <h2 class="display h-s">提示词评测 · <span class="hl">微调</span>差异</h2>
   <p class="body-s mt-s" style="max-width:1380px">方法跟模型评测一样——差异只在每一步具体长什么样。</p>
   <div class="mt-m" style="display:grid;grid-template-columns:1.3fr 1fr;gap:24px;width:100%;max-width:1380px;align-items:start">
     <table class="tbl dense" style="margin:0">
-      <thead><tr><th style="width:120px">Step</th><th style="width:38%">模型评测</th><th>提示词评测 · 微调点</th></tr></thead>
+      <thead><tr><th style="width:100px">Step</th><th style="width:38%">模型评测</th><th>提示词评测 · 微调点</th></tr></thead>
       <tbody>
         <tr><td><strong>01 定目标</strong></td><td class="sec">选哪款模型</td><td>选哪版 prompt / 防退化 / 稳定性</td></tr>
         <tr><td><strong>02 拆指标</strong></td><td class="sec">业务成本 + 效果</td><td>采纳率 / 改写次数 / 发布率</td></tr>
         <tr><td><strong>03 拆维度</strong></td><td class="sec">偏定量</td><td><strong>偏定性</strong>（完成度 / 格式 / 语气）</td></tr>
-        <tr><td><strong>04 定评分</strong></td><td class="sec">Rubric / 对比法 / 脚本</td><td><strong>LLM-as-Judge 为主</strong></td></tr>
-        <tr><td><strong>05 跑测试</strong></td><td class="sec">评测集 30-100 条</td><td><strong>业务输入 × prompt 变体</strong></td></tr>
-        <tr><td><strong>06 统计分数</strong></td><td class="sec">选型结论</td><td>哪版上线 / 有没有退化</td></tr>
+        <tr><td><strong>04 造评测集</strong></td><td class="sec">真实日志 + bad case</td><td><strong>业务输入 × prompt 变体</strong></td></tr>
+        <tr><td><strong>05 定评分</strong></td><td class="sec">Rubric / 对比法 / 脚本</td><td><strong>LLM-as-Judge 为主</strong></td></tr>
+        <tr><td><strong>06 跑测试</strong></td><td class="sec">PM 关注定性</td><td>同样关注定性 + 稳定性</td></tr>
+        <tr><td><strong>07 统计分数</strong></td><td class="sec">选型结论</td><td>哪版上线 / 有没有退化</td></tr>
       </tbody>
     </table>
     <div>
@@ -1434,7 +1472,7 @@ html, body {
   </div>
 </section>
 
-<!-- S27 提示词评测 实操小红书 -->
+<!-- S28 提示词评测 实操小红书 -->
 <section class="slide">
   <div class="slide-header"><span>提示词评测 · 实操</span><span>评测这条提示词</span></div>
   <div class="eyebrow">Hands-On · 现场操作</div>
